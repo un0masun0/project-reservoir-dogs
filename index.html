@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brand</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--Fonts used-->
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC');
+    </style>
+    
+</head>
+  
+  <body>
+    <div class="nav-bar">
+      <div class="brand">Brand</div>
+        <div class="links-container">
+          <a href="index.html" class="links">Home</a>
+          <a href="about.html" class="links">About</a>
+          <a href="menu.html" class="links">Menu</a>
+          <a href="hourslocation.html" class="links">Hours & Location</a>
+        </div>
+    </div>
+    
+    <!--image slideshow-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+            <div class="image-show">
+            </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+            <div class="image-show2">
+              </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+            <div class="image-show3">
+              </div>
+        </div>
+      
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    
+
+   </div>
+    
+    <div class="container-2">
+      <div class="text-box1">
+        <div class="inner-text1">
+          <p>
+      BRAND is a seasonal American restaurant that offers a modern interpretation to the traditional dinner party in a rustic, warm, and inviting space.
+
+The kitchen team explores an array of ingredients and cooking techniques to create seasonal dishes for everyone to enjoy.
+
+From conception to execution, our restaurant combines culinary talent with sincere hospitality to allow guests to enjoy an unforgettable dining experience.
+          </p>
+        </div>
+      </div>
+        <div class="about-img">
+    </div>
+    </div>
+    <div class="Footer-container">
+    
+    </div>
+    
+   <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000);
+    }
+    </script>
+    
+        <div class="footer"></div>
+          <div class="button-container">
+              <a href="#top" class="bottom-button">Go to top</a>
+          </div>
+    
+  </body>
+</html>
+
